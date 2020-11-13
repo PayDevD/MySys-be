@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 보기</title>
+</head>
+<body>
+    문서 ID <%= file.id %><br />
+    작성 일자 <%= file.date %> <br />
+    작업 내용 <%= file.workRecord %><br />
+    파일 해시 <%= hashValue %><br />
+    <a href="/check?id=<%= file.id %>">유효성 확인</a>
+    파일 해시
+    <input type="text" name="hashValue" id="hashValue" value="<%= hashValue %>" readonly>
+    <button onclick="alert('등록완료 Raw Tx : f8ca0b8504a817c800836691b794035bb7a635351df928c0863d406065db5f2e228480b864242ab44700000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000020636434316133653662326236386431353336373936383130316533353430636126a0e05a8eb771d2929fd2105ee5c9afea25731e39d10ad144e0f912f3219eef8edfa021f4c6c82b5efccf57b3c670f33e8618de2a8204191bd1f24cf642d13d738211')">블록체인 등록</button>
+    <br /> <br/>
+    Raw Tx : <br/>f8ca0b8504a817c800836691b794035<br/>
+    bb7a635351df928c0863d406065db5<br/>
+    f2e228480b864242ab447000000000<br/>
+    000000000000000000000000000000<br/>
+    000000000000000000000002000000<br/>
+    000000000000000000000000000000<br/>
+    000000000000000000000000000206<br/>
+    364343161336536623262363864313<br/>
+    533363739363831303165333534306<br/>
+    36126a0e05a8eb771d2929fd2105ee<br/>
+    5c9afea25731e39d10ad144e0f912f<br/>
+    3219eef8edfa021f4c6c82b5efccf5<br/>
+    7b3c670f33e8618de2a8204191bd1f<br/>
+    24cf642d13d738211
+</body>
+</html>
